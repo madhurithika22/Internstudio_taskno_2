@@ -48,8 +48,6 @@ def predict(image):
         confidence = output.item()
     
     return prediction, confidence
-
-# ---------- Streamlit UI ----------
 st.title("MedAI - Detects Pneumonia with your x-ray")
 
 uploaded_file = st.file_uploader("Upload a PNG image", type=["png"])
